@@ -6,10 +6,10 @@ import streamlit as st
 import plotly.express as px
 
 #SQL connection with database
-mydb = mysql.connector.connect(host="localhost",user="root",password="12345678")
+mydb = mysql.connector.connect(host="localhost",user="root",password="")
 mycursor = mydb.cursor(buffered=True)
 
-db_connection_str = f"mysql+mysqlconnector://root:12345678@localhost/phonepe"
+db_connection_str = f"mysql+mysqlconnector://root:password@localhost/phonepe"
 db_engine = create_engine(db_connection_str)
 
 
